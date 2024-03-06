@@ -115,8 +115,6 @@ export const useUserStore = defineStore({
         )
         if(!postUserImage.ok) {
           this.isLoading--
-          this.onError = true
-          return
         }
         const postUserImageResponse = await postUserImage.json()
         const postUserImageLink = postUserImageResponse.link
@@ -134,10 +132,8 @@ export const useUserStore = defineStore({
         )
         if(!patchUserImage.ok) {
           this.isLoading--
-          this.onError = true
-          return
         }
-        if(userSignUp.ok, getUserToken.ok, postUserImage.ok, patchUserImage.ok) {
+        if(userSignUp.ok, getUserToken.ok) {
         this.setUserLogin(this.userData.username, this.userData.password)
         this.pageBool = !this.pageBool
         }
