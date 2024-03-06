@@ -5,7 +5,7 @@
 I was tasked with handling the creation of the API via WordPress ACF to REST API and making the Login and SignUp pages.
 
 # API
-##What I've used for this -> WordPress(ACF, ACF to REST API, JWT-Auth)
+## What I've used for this -> WordPress(ACF, ACF to REST API, JWT-Auth)
 
 I've made one Post type and two different Field groups.
 
